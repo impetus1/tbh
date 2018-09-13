@@ -1,61 +1,25 @@
-# React Passport Example Application
+This is a site for the non-profit, Tampa Bay Harvest, for means of hosting a community of open-source development on the platform. 
 
-An example application which combines a back-end which stores user data and front-end React.js application which handles user authentication sessions.
+The currently live site can be found at http://tampabayharvest.com. 
 
-This application be easily separated into two completely different repositories.
+Major hurdles to overcome:
 
-Created using the tutorials below:
+Currently a model for an ethereum-based web token is something which has some progress, however, creating a web3 strategy in Passport in order to make better use of Metamask is still up in the air and we'll continue utilizing mongodb for storing usernames/emails and passwords. 
 
-https://vladimirponomarev.com/blog/authentication-in-FreshApps-creating-components
-https://vladimirponomarev.com/blog/authentication-in-FreshApps-jwt
+Also, hosting a public 'food donated' ledger would prove to be difficult due to dependance on Metamask log ins so this info will just have to be input by hand. Automatic updates are then desirable and would have to be an internal process to then be served.
 
-However, this version has replaced the React Router v3 which were used in the above tutorials with the most recent React Router v4 which has some major differences. I also made some minor tweaks to account for the NPM packages which had issues due to updates since the tutorial was published.
+A disqus forum would be nice. 
 
-This application incorporates the following packages:
+This React/Redux leverages the technologies/packages as follows:
 
-- axios
-- bcryptjs
-- jsonwebtoken
-- mongoose
-- passport
-- react-router-dom
-- validator
-
-## Installation
-
-After cloning the repo, follow the steps below:
-```sh
-$ cd react-passport-example
-```
-```sh
-$ yarn install
-```
-```sh
-$ sudo mongod
-```
-```sh
-$ yarn run dev
-```
-
-When editing the files, run the following command for webpack to watch your files and bundle whenever changes are made:
-```sh
-$ yarn run bundle
-```
-
-## Screenshots
-
-#Home page before login:
-
-#![Alt Home Page](/README/home.png?raw=true)
-
-#Sign up page:
-
-#![Alt Signup Page](/README/signup.png?raw=true)
-
-#Login page:
-
-#![Alt Login Page](/README/login.png?raw=true)
-
-#Dashboard which is only accessible after login:
-
-#![Alt Dashboard](/README/dashboard.png?raw=true)
+-axios
+-bcrypt
+-jsonwebtoken
+-mongoose
+-passport
+-react-router-dom
+-validator
+-Material-ui
+-Solidity
+-Ethereum
+-truffle
