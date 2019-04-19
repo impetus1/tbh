@@ -15752,6 +15752,8 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 
 // import routes from './routes.js';
 
+//import Home from './components/Somecomp'; 
+
 // remove tap delay, essential for MaterialUI to work properly
 (0, _reactTapEventPlugin2.default)();
 

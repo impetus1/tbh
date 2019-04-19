@@ -2,7 +2,7 @@ pragma solidity ^0.4.20;
 
 contract TBHfoodToken {
     address public donor;
-    address public resquer;
+    address public rescuer;
     uint public weight;
     
     enum State { InTransit, Received, Aborted }
@@ -12,8 +12,8 @@ contract TBHfoodToken {
     event FoodOnItsWay();
     event ItemReceived();
     
-    modifier onlyResquer() {
-        require(msg.sender == resquer);
+    modifier onlyRescuer() {
+        require(msg.sender == rescuer);
         _;
     }
 
@@ -40,11 +40,11 @@ contract TBHfoodToken {
         state = State.Aborted;
         Aborted();
     }
-    //Order delivered to the resquer
+    //Order delivered to the rescuer
     function orderDelivered() public payable
-    onlyResquer {
+    onlyRescuer {
         state = State.Received;
-        resquer.transfer(weight);
+        rescuer.transfer(weight);
         donor.transfer(weight);
         ItemReceived();
     }

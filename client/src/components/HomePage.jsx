@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import Auth from '../modules/Auth';
-
 const styles = {
   card: {
     position: 'relative',
@@ -33,6 +32,7 @@ class HomePage extends React.Component {
             <CardText style={{ fontSize: '16px', color: 'green' }}>You are not logged in. sadface</CardText>
           )}
       </Card>
+      
       
     )
   }

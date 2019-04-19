@@ -22,6 +22,7 @@ import DashboardPage from './containers/DashboardPage.jsx';
 import Auth from './modules/Auth';
 import TheCarousel from './components/Carousel.jsx';
 import About from './components/routes/About';
+//import Home from './components/Somecomp'; 
 
 // remove tap delay, essential for MaterialUI to work properly
 injectTapEventPlugin();
@@ -102,7 +103,7 @@ class Main extends Component {
               )}
               
             </div>
-            <PropsRoute exact path="/" component={TheCarousel}   />
+            <PropsRoute exact path="/" component={TheCarousel} />
             <PropsRoute exact path="/" component={HomePage} toggleAuthenticateStatus={() => this.toggleAuthenticateStatus()}  />
             <PropsRoute exact path="/about" component={About}   />
             <PrivateRoute path="/dashboard" component={DashboardPage}/>
