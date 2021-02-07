@@ -1,4 +1,4 @@
 {
-  "dbUri": "mongodb://ffap:pass@cluster0.x7ekd.azure.mongodb.net:27017/tbh",
+  "dbUri": "mongodb://ffap:pass@cluster0.x7ekd.azure.mongodb.net/tbh",
   "jwtSecret": "a secret phrase!!"
 }
