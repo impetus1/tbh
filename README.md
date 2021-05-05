@@ -1,3 +1,9 @@
+This is based on a Passport.js repo fork. 
+The scope of this project had been intended to provide a identity solution in order to verify and authenticate a user, using the web3 layer which in turn allows one to use their ethereum wallet in a one-click 'restful' login. 
+*Does work with heroku, just provide procfile, can integrate with other login solutions like google and facebook. 
+A custom react cms would afford a all-in-one social media DAPP platform.  
+Current status is deprecated. 
+
 # React Passport Example Application
 
 An example application which combines a back-end which stores user data and front-end React.js application which handles user authentication sessions.
