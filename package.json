@@ -15,7 +15,7 @@
     "npm": ">=6.7.0"
   },
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.2",
     "drizzle-react": "^1.2.0",
